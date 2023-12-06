@@ -1,0 +1,262 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Aplicar las fuentes a todo el documento */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+/* Aplicar la segunda fuente a todos los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Utilizar Flexbox en un contenedor */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alineación vertical */
+}
+
+/* Estilos para el header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Estilos para el main */
+main {
+  padding: 30px;
+}
+
+main h2, main h3, main h4 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+main li {
+  margin-bottom: 5px;
+}
+
+/* Estilos para las secciones específicas */
+/* Estilos mejorados para la sección 1 */
+#seccion1 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#seccion1 h2 {
+  margin-top: 20px;
+}
+
+#seccion1 h4 {
+  font-weight: bold;
+}
+
+#seccion1 ul {
+  margin-left: 20px;
+}
+
+/* Estilos mejorados para la sección 3 */
+#seccion3 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#seccion3 h2 {
+  margin-top: 20px;
+}
+
+#seccion3 h3 {
+  font-weight: bold;
+}
+
+#seccion3 img {
+  margin-top: 20px;
+}
+
+/* Estilos para la sección 2 */
+#seccion2 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#seccion2 h3 {
+  margin-top: 20px;
+}
+
+#seccion2 ul {
+  margin-left: 20px;
+}
+
+/* Estilos para la sección 4 */
+#seccion4 {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#seccion4 form {
+  margin-top: 10px;
+}
+
+#seccion4 label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#seccion4 input[type="text"],
+#seccion4 input[type="password"],
+#seccion4 input[type="submit"] {
+  width: 15%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#seccion4 input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* Estilos para el footer */
+footer {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+   /*position: fixed;
+ width: 100%;
+  bottom: 0;
+  margin-top: -90px; /* Ajusta el valor según sea necesario para compensar el espacio agregado a #seccion4 
+}
+#seccion4 {
+  margin-bottom: 100px; /* Ajusta el valor según sea necesario */
+}
+
+
+/* Reglas media query para diseño adaptable */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header, nav, main, footer {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  header, nav, main, footer {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  header, nav, main, footer {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 22px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  header, nav, main, footer {
+    padding: 25px;
+  }
+}
+
+/* Agregar el atributo class a todos los elementos contenedores a los cuales se les va a aplicar estilos */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alineación vertical */
+}
+
+/* Al menos un elemento de la página web debe ser ubicado con cualquier valor de la propiedad position de CSS */
+#seccion1 {
+  position: relative; /* Puedes cambiar esto según tus necesidades */
+}
+
+/* En caso de que se considere necesario, se pueden agregar otras reglas media query adicionales a las tres (3) básicas exigidas */
+@media (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  header, nav, main, footer {
+    padding: 30px;
+  }
+}
